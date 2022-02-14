@@ -200,7 +200,7 @@ h1 > span {
 }
 
 .checkbox input:checked + .renember::before {
-  background: var(--primary-color) url(/images/check.svg) center;
+  background: var(--primary-color) url(images/check.svg) center;
 }
 
 .forgot {

@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+body {
+  background: var(--background);
+}
+
+.container {
+  background-color: var(--background);
+  color: var(--text-title);
+}
+
+.logo {
+  margin-left: 1rem;
+  margin-top: 1.25rem;
+  width: 7.18rem;
+  height: 40px;
+  margin-bottom: 0.3rem;
+  display: inline-flex;
+}
+
+h1 {
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+  font: 700 1.875rem var(--title-font);
+  display: inline-flex;
+  color: #ffffff;
+}
+
+h1 > span {
+  color: var(--primary-color);
+}
+
+.header {
+  margin-top: 2rem;
+  margin-left: 1.25rem;
+  padding: 0;
+}
+
+.log-in {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.textLog {
+  font: 600 var(--title-font-size) var(--title-font);
+  margin-top: 0.5rem;
+  display: inline-flex;
+  margin-left: 10px;
+}
+
+.text {
+  font: 500 1rem var(--body-font);
+  color: var(--text-base);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  margin-left: 1.25rem;
+  display: block;
+  width: 100vh;
+  flex-direction: column;
+}
+
+.textEmail {
+  display: inline-flex;
+  margin-top: 1.68rem;
+  margin-bottom: 0.312rem;
+}
+
+.form input {
+  width: 22.5rem;
+  height: 2.5rem;
+  background-color: var(--form-background);
+  border: 1px solid #868686;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 0.3125rem;
+  padding-left: 45px;
+  color: var(--text-base);
+  cursor: pointer;
+}
+
+#input:focus-within input:focus {
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 0px 3px 3px var(--primary-color);
+}
+
+.iconEmail {
+  position: absolute;
+  margin-left: 0.9375rem;
+  margin-top: 0.875rem;
+}
+
+.emailFocus {
+  position: absolute;
+  margin-left: 0.9375rem;
+  margin-top: 0.875rem;
+  display: none;
+}
+
+#inputEmail:focus-within .emailFocus {
+  display: block;
+}
+
+.textPassword {
+  display: flex;
+  margin-top: 1.25rem;
+  margin-bottom: 0.312rem;
+}
+
+.iconLock {
+  position: absolute;
+  margin-left: 0.9375rem;
+  margin-top: 0.875rem;
+}
+
+.lockFocus {
+  position: absolute;
+  margin-left: 0.9375rem;
+  margin-top: 0.875rem;
+  display: none;
+}
+
+#inputPass:focus-within .lockFocus {
+  display: block;
+}
+
+.iconEye {
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 0.875rem;
+  width: 1.25rem;
+  display: block;
+}
+
+.iconEyeClose {
+  position: absolute;
+  margin-left: 325px;
+  margin-top: 0.875rem;
+  width: 1.25rem;
+  display: none;
+}
+
+.checkbox {
+  display: flex;
+  margin: 0;
+  width: 12.5rem;
+}
+
+.checkbox label {
+  margin-left: 3px;
+  margin-top: 25px;
+  font-size: 1rem;
+  font-family: 'roboto';
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox input + .renember:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 1px solid #868686;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox input:checked + .renember::before {
+  background: var(--primary-color) url(/images/check.svg) center;
+}
+
+.forgot {
+  position: absolute;
+  display: flex;
+  margin-top: 25px;
+  margin-left: 12.93rem;
+  font-weight: 600;
+  font-family: 'poppins';
+  font-size: 0.875rem;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  transition: 300ms;
+}
+
+.button {
+  margin-top: 30px;
+  width: 22.5rem;
+  height: 3.125rem;
+  border-radius: 4px;
+  border: var(--background);
+  padding: 12px 24px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #473404;
+  font: 600 1.125rem 'poppins', sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 3px 4px #dba417;
+  background-color: transparent;
+  color: white;
+  transition: 500ms;
+}
+
+.register {
+  display: flex;
+  font: 400 14px 'poppins', sans-serif;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.register:hover {
+  text-decoration: underline;
+  transition: 300ms;
+}
+
+strong {
+  margin-left: 3px;
+}
+
+.divider {
+  width: 22.5rem;
+  margin-top: 20px;
+  height: 1px;
+  background: linear-gradient(110deg, #3b3527, #5e5131, #ffb700);
+}
+
+h2 {
+  margin-top: 25px;
+  display: flex;
+  margin-left: 25px;
+  font: 700 20px 'poppins', sens-serif;
+}
+
+.social {
+  margin-top: 35px;
+  margin-left: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  width: fit-content;
+  gap: 40px;
+}
+
+.iconSocial {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  clip-path: circle(50% at 50% 50%);
+  background-color: var(--primary-color);
+}
+
+.iconSocial:hover {
+  background-color: #fbff00;
+  transform: scale(1.3);
+  transition: 300ms;
+}
+
+.background {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 720px) {
+  .container {
+    margin-top: 0;
+    display: inline-block;
+    max-width: 450px;
+  }
+
+  .background {
+    margin-top: 0;
+    margin-left: 0;
+    position: absolute;
+    display: inline;
+    visibility: visible;
+  }
+
+  .background img {
+    width: 45vh;
+    height: 110vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 0;
+    display: inline-block;
+    max-width: 750px;
+  }
+
+  .logo {
+    margin-left: 2.5rem;
+  }
+
+  .containerForm {
+    background-color: var(--form-background);
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-left: 5.625rem;
+    margin-right: 4.62rem;
+    width: 41rem;
+    height: 43.75rem;
+    padding-left: 124px;
+  }
+
+  label {
+    font-size: 1.25rem;
+  }
+
+  .header {
+    margin-top: 40px;
+  }
+
+  .background {
+    margin-top: 0;
+    margin-left: 100px;
+    position: absolute;
+    display: inline;
+    visibility: visible;
+  }
+
+  .background img {
+    width: 45.8vw;
+    height: 105vh;
+  }
+}

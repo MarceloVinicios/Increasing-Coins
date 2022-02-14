@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- icone pagina-->
+    <link rel="shotcurt icon" href="images/iconBitcoin.svg" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@500;700&family=Saira+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&family=Saira+Condensed:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Increasing Coins</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="/images/logoBitcoin.svg" alt="logo do site" class="logo" />
+        <h1>Increasing<span>Coins</span></h1>
+      </div>
+
+      <div class="containerForm">
+        <header class="header">
+          <img src="/images/log-in.svg" class="log" />
+          <h2 class="textLog">Faça seu login</h2>
+          <p class="text">Entre com suas informações de cadastro.</p>
+        </header>
+
+        <div class="form" id="input">
+          <form action="">
+            <label for="email" class="textEmail">E-mail</label> <br />
+
+            <div id="inputEmail">
+              <img src="/images/mail.svg" class="iconEmail" />
+              <img src="/images/mail-focus.svg" class="emailFocus" />
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu E-mail"
+                class="focus"
+              />
+            </div>
+
+            <label for="password" class="textPassword">Senha</label>
+
+            <div id="inputPass">
+              <img src="/images/lock.svg" class="iconLock" />
+              <img src="/images/lock-focus.svg" class="lockFocus" />
+              <img src="/images/eye.svg" id="hide1" class="iconEye" />
+              <img
+                src="/images/close-eye.svg"
+                id="hide2"
+                class="iconEyeClose"
+              />
+              <input
+                type="password"
+                placeholder="Digite sua senha"
+                minlength="4"
+                id="seeInput"
+                class="inputPassword"
+              />
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" id="renember" />
+              <label class="renember" for="renember">Lembre-me</label>
+
+              <a href="#" class="forgot">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="button">ENTRAR</button>
+
+            <a href="#" class="register"
+              >Não tem uma conta? <strong>Registre-se</strong></a
+            >
+
+            <div class="divider"></div>
+
+            <h2>Ou entre com suas redes sociais</h2>
+
+            <section class="social grid">
+              <a href="#"
+                ><img
+                  src="images/facebook.svg"
+                  title="Facebook"
+                  class="iconSocial facebook"
+              /></a>
+
+              <a href="#"
+                ><img
+                  src="images/instagram.svg"
+                  title="Instagram"
+                  class="iconSocial instagram"
+              /></a>
+
+              <a href="#"
+                ><img
+                  src="images/linkedin.svg"
+                  title="Linkedin"
+                  class="iconSocial linkedin"
+              /></a>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="background"><img src="/images/backgrounImg.jpg" /></div>
+    <!--Script-->
+    <script src="main.js"></script>
+  </body>
+</html>
